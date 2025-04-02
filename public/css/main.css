@@ -19,7 +19,7 @@ video {
 #hero .hero-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     gap: var(--xl);
 
     height: 95svh;
@@ -63,9 +63,22 @@ video {
     z-index: -1;
 }
 
+#hero .text-container {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
 #hero h1 {
     color: var(--desertStorm);
-    font-size: var(--font-size__600);
+    font-size: var(--font-size__700);
+    font-weight: 700;
+}
+
+#hero h2.mobile {
+    font-size: var(--font-size__400);
+    color: var(--desertStorm);
+    font-weight: 500;
 }
 
 /* services */
@@ -84,7 +97,7 @@ video {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: var(--lg);
+    gap: var(--xl);
 
     background-color: var(--foggyMist);
     border-radius: var(--lg);
@@ -95,37 +108,49 @@ video {
     max-width: 20rem;
     display: flex;
     flex-direction: column;
+    text-align: left;
+    gap: var(--sm);
+}
+
+#services .icon-sign {
+    display: flex;
+    gap: var(--sm);
     align-items: center;
 }
 
-#services .icon-box {
-    background-color: var(--midnightAsh);
+#services picture {
     display: flex;
-    height: var(--xxl);
-    width: var(--xxl);
+    height: var(--lg);
+    width: var(--lg);
     justify-content: center;
     align-items: center;
-    border-radius: var(--md);
+    border-radius: var(--xs);
+    border: 1.75px solid var(--midnightAsh);
 }
 
-#services img {
-    height: var(--xl);
-    width: var(--xl);
+#services svg {
+    height: var(--md);
+    width: var(--md);
+    fill: var(--midnightAsh)
 }
 
 #services h1 {
     color: var(--midnightAsh);
     font-size: var(--font-size__400);
+    font-weight: 700;
     white-space: pre-line;
 }
 
 #services h2 {
     color: var(--midnightAsh);
-    font-size: var(--font-size__200);
+    font-size: var(--font-size__300);
+    font-weight: 700;
 }
 
 #services p {
-    color: var(--cloudGrey);
+    font-size: var(--font-size__100);
+    color: var(--midnightAsh);
+    font-weight: 500;
 }
 
 /* hook */
@@ -179,10 +204,16 @@ video {
 #hook h1 {
     color: var(--desertStorm);
     font-size: var(--font-size__400);
+    font-weight: 700;
 }
 
 #hook p {
     color: var(--desertStorm);
+    font-size: var(--font-size__100);
+}
+
+#hook span {
+    font-weight: 800;
 }
 
 /* benefits */
@@ -213,12 +244,15 @@ video {
 }
 
 #benefits h2 {
-    font-size: var(--font-size__500);
+    font-size: var(--font-size__300);
+    font-weight: 700;
     color: var(--midnightAsh);
 }
 
 #benefits p {
-    color: var(--ironOre);
+    font-size: var(--font-size__100);
+    font-weight: 500;
+    color: var(--midnightAsh);
 }
 
 /* reviews */
@@ -275,13 +309,14 @@ video {
 
 #reviews h1 {
     color: var(--midnightAsh);
-    font-size: var(--font-size__500);
+    font-size: var(--font-size__400);
 }
 
 #reviews p {
     font-size: var(--font-size__100);
-    color: var(--midnightAsh);
+    font-weight: 500;
     font-style: italic;
+    color: var(--midnightAsh);
 }
 
 #reviews .profile-name p {
@@ -348,12 +383,14 @@ video {
 }
 
 #locations h1 {
-    font-size: var(--font-size__500);
+    font-size: var(--font-size__400);
+    font-weight: 700;
     color: var(--midnightAsh);
 }
 
 #locations h2 {
     font-size: var(--font-size__200);
+    font-weight: 700;
     color: var(--desertStorm);
 }
 
@@ -369,6 +406,7 @@ video {
 }
 
 @media (width >=768px) {
+    /* hero */
     #hero {
         padding-left: var(--xl);
         padding-right: var(--xl);
