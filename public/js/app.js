@@ -1,19 +1,13 @@
-// const faqContainers = document.querySelectorAll(".faq-container");
+const button = document.querySelector('.button-one');
 
-// faqContainers.forEach((faq) => {
-//     faq.addEventListener("click", () => {
-//         // Close all other FAQs
-//         faqContainers.forEach((otherFaq) => {
-//             if (otherFaq !== faq) {
-//                 otherFaq.classList.remove("active");
-//             }
-//         });
-
-//         // Toggle the clicked FAQ
-//         faq.classList.toggle("active");
-        
-//     });
-// });
+button.addEventListener('click', () => {
+    const isOpened = button.getAttribute('aria-expanded')
+    if (isOpened === 'false') {
+        button.setAttribute('aria-expanded', 'true')
+    } else {
+        button.setAttribute('aria-expanded', 'false')
+    }
+})
 
 document.querySelectorAll('.faq-container').forEach(item => {
     item.addEventListener('click', function () {
@@ -32,45 +26,6 @@ document.querySelectorAll('.faq-container').forEach(item => {
     });
 });
 
-// Email
-// const contactForm = document.querySelector('.form-items');
-
-// let name = document.getElementById('name')
-// let email = document.getElementById('email')
-// let address = document.getElementById('address')
-// let message = document.getElementById('message')
-
-// contactForm.addEventListener('submit', (e)=>{
-//     e.preventDefault();
-
-//     let formData = {
-//         name: name.value,
-//         email: email.value,
-//         address: address.value,
-//         message: message.value
-//     }
-
-//     // could use fetch API 3 lines
-//     let xhr = new XMLHttpRequest();
-//     xhr.open('POST', '/');
-//     xhr.setRequestHeader('content-type', 'application/json');
-//     xhr.onload = function() {
-//         console.log(xhr.responseText);
-//         if (xhr.responseText == 'success'){
-//             alert('Email sent');
-//             name.value = '';
-//             email.value = '';
-//             address.value = '';
-//             message.value = '';
-//         } else {
-//             alert('Something went wrong!')
-//         }
-//     }
-
-//     //send method to the backend
-//     xhr.send(JSON.stringify(formData))
-
-// })
 // Function to handle Contact Form submission
 function handleContactFormSubmit() {
     const form = document.getElementById('contact-form-1');

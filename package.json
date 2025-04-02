@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "sync": "browser-sync start --proxy 'localhost:3001' --files 'public/**/*.*, views/**/*.*, routes/**/*.js, server.js'"
+    "sync": "browser-sync start --proxy 'localhost:3001' --files 'public/**/*.*, server.js'"
   },
   "keywords": [],
   "author": "",
