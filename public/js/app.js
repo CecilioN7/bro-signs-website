@@ -1,11 +1,22 @@
-const button = document.querySelector('.button-one');
+const button = document.querySelector('.button-one, overlay');
+const navbar = document.getElementById('primary-navigation')
+const overlay = document.getElementById('overlay')
+
+overlay.addEventListener('click', () => {
+    button.setAttribute('aria-expanded', 'false')
+    navbar.classList.remove('show')
+})
+
+
 
 button.addEventListener('click', () => {
     const isOpened = button.getAttribute('aria-expanded')
     if (isOpened === 'false') {
         button.setAttribute('aria-expanded', 'true')
+        navbar.classList.add('show')
     } else {
         button.setAttribute('aria-expanded', 'false')
+        navbar.classList.remove('show')
     }
 })
 
