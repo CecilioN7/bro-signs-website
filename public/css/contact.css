@@ -2,6 +2,7 @@
 p,
 a {
     font-size: var(--font-size__100);
+    font-weight: 500;
 }
 
 #contact {
@@ -60,7 +61,8 @@ a {
 
 #contact h1 {
     color: var(--midnightAsh);
-    font-size: var(--font-size__700);
+    font-size: var(--font-size__600);
+    font-weight: 700;
 }
 
 #contact .info {
@@ -85,7 +87,8 @@ a {
 }
 
 .form-section  h1 {
-    font-size: var(--font-size__500);
+    font-size: var(--font-size__400);
+    font-weight: 700;
     color: var(--midnightAsh);
 }
 
@@ -109,6 +112,8 @@ a {
     padding: var(--md);
     border-radius: var(--md);
     font-size: var(--font-size__100);
+    font-weight: 500;
+    color: var(--midnightAsh);
     background-color: var(--desertStorm);
     border: none;
     transition: 0.15s all ease;
@@ -133,9 +138,9 @@ a {
 .form-section  input:not(:placeholder-shown) ~ label,
 .form-section  textarea:not(:placeholder-shown) ~ label {
     transform: translate(0px, -28px);
-    background-color: #fdfdf7;
-    padding: 1px 4px;
-    border-radius: var(--xs);
+    background-color: var(--desertStorm);
+    padding: 1px 5px;
+    border-radius: var(--sm);
 }
 
 input,
@@ -166,6 +171,7 @@ button:focus {
     width: 100%;
     padding: var(--md);
     font-size: var(--font-size__100);
+    font-weight: 700;
     background-color: var(--oceanBreeze);
     border-radius: var(--lg);
     color: var(--desertStorm);

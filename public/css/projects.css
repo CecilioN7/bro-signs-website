@@ -7,16 +7,20 @@ img {
     display: flex;
     flex-direction: column;
     padding: var(--xl) var(--lg);
+    padding-top: var(--xxxl);
     gap: var(--md);
 }
 
 #projects-title h1 {
-    font-size: var(--font-size__700);
+    font-size: var(--font-size__600);
+    font-weight: 700;
     color: var(--midnightAsh);
 }
 
 #projects-title p {
     color: var(--midnightAsh);
+    font-size: var(--font-size__100);
+    font-weight: 500;
 }
 
 /* grid */

@@ -1,4 +1,4 @@
-const button = document.querySelector('.button-one, overlay');
+const button = document.querySelector('.button-one');
 const navbar = document.getElementById('primary-navigation')
 const overlay = document.getElementById('overlay')
 
@@ -6,8 +6,6 @@ overlay.addEventListener('click', () => {
     button.setAttribute('aria-expanded', 'false')
     navbar.classList.remove('show')
 })
-
-
 
 button.addEventListener('click', () => {
     const isOpened = button.getAttribute('aria-expanded')

@@ -8,7 +8,7 @@ img {
     display: flex;
     flex-direction: column;
     padding: var(--xxxl) var(--lg);
-    padding-top: var(--xl);
+    padding-top: var(--xxxl);
 }
 #about-banner .about-title {
     padding-bottom: var(--xl);
@@ -46,15 +46,17 @@ img {
     font-size: var(--font-size__600);
     color: var(--midnightAsh);
 }
-#about-banner p {
-    font-weight: 700;
-}
+
 #about-banner .brand{
     color: var(--cloudGrey);
+    font-size: var(--font-size__100);
+    font-weight: 700;
 }
 
 #about-banner .description{
     color: var(--midnightAsh);
+    font-size: var(--font-size__100);
+    font-weight: 700;
 }
 
 /* mission */
@@ -83,10 +85,13 @@ img {
 }
 #mission h1 {
     color: var(--midnightAsh);
-    font-size: var(--font-size__500);
+    font-size: var(--font-size__400);
+    font-weight: 700;
 }
 #mission p {
     color: var(--midnightAsh);
+    font-size: var(--font-size__100);
+    font-weight: 500;
 }
 
 /* story */
@@ -119,11 +124,14 @@ img {
 }
 #story h1 {
     color: var(--midnightAsh);
-    font-size: var(--font-size__500);
+    font-size: var(--font-size__400);
+    font-weight: 700;
 }
 
 #story p {
     color: var(--midnightAsh);
+    font-size: var(--font-size__100);
+    font-weight: 500;
 }
 
 /* vision */
@@ -165,11 +173,20 @@ img {
     padding: var(--xl) var(--lg);
 }
 #vision h1 {
-    font-size: var(--font-size__500);
+    font-size: var(--font-size__400);
+    font-weight: 700;
 }
 
 #vision h2 {
-    font-size: var(--font-size__200);
+    font-size: var(--font-size__300);
+    font-weight: 700;
+    color: var(--desertStorm);
+}
+
+#vision p {
+    font-size: var(--font-size__100);
+    font-weight: 500;
+    color: var(--desertStorm);
 }
 
 @media (width >=768px) {

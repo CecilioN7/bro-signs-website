@@ -42,7 +42,7 @@ video {
     gap: var(--md);
 }
 
-#hero .gradient {
+/* #hero .gradient {
     z-index: 0;
     height: 100%;
     width: 100%;
@@ -50,18 +50,27 @@ video {
     bottom: 0;
     position: absolute;
     background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.655) 60%);
-}
+} */
 
-#hero picture img {
+/* #hero picture img {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 80vh;
     object-fit: cover;
-    object-position: 75% center;
+    object-position: center 65%;
     z-index: -1;
+} */
+
+#hero {
+    background-image: url('../images/home-mobile.webp');
+    background-position: center 100%; /* Adjust this to position the black part right */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
+
+
 
 #hero .text-container {
     display: grid;
@@ -71,14 +80,14 @@ video {
 
 #hero h1 {
     color: var(--desertStorm);
-    font-size: var(--font-size__700);
+    font-size: var(--font-size__600);
     font-weight: 700;
 }
 
 #hero h2.mobile {
     font-size: var(--font-size__400);
     color: var(--desertStorm);
-    font-weight: 500;
+    font-weight: 700;
 }
 
 /* services */
@@ -114,8 +123,9 @@ video {
 
 #services .icon-sign {
     display: flex;
+    flex-direction: row;
+    justify-content: left;
     gap: var(--sm);
-    align-items: center;
 }
 
 #services picture {
@@ -155,11 +165,6 @@ video {
 
 /* hook */
 #hook {
-    background-image: url(../images/hook-background-mobile.png);
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     background-color: var(--midnightAsh);
     padding: var(--xxxl) var(--lg);
 }
@@ -169,7 +174,7 @@ video {
     gap: var(--md);
 }
 
-.glass-container {
+/* .glass-container {
     border-radius: var(--lg);
     background-color: rgba(255, 255, 255, 0.062);
     backdrop-filter: blur(1rem);
@@ -188,11 +193,16 @@ video {
     display: flex;
     flex-direction: column;
     gap: var(--md);
-}
+} */
 
-.video-container {
+#hook .video-container {
     display: grid;
     gap: var(--md)
+}
+
+#hook .video-subheading {
+    display: grid;
+    gap: var(--md);
 }
 
 #hook video {
@@ -210,6 +220,11 @@ video {
 #hook p {
     color: var(--desertStorm);
     font-size: var(--font-size__100);
+    font-weight: 700;
+}
+
+#hook .brand {
+    color: var(--cloudGrey);
 }
 
 #hook span {
