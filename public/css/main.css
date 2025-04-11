@@ -10,11 +10,41 @@ video {
 
 /* hero */
 #hero {
-    position: relative;
-    width: 100%;
-    height: 95svh;
+    position:relative;
+    overflow: hidden;
+    background-image: url('../images/home-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 40rem;
 }
 
+@keyframes floatLeftRight {
+    0%   { transform: translate(4%, -47.5%); }
+    50%  { transform: translate(8%, -47.5%); }
+    100% { transform: translate(4%, -47.5%); }
+}
+
+#hero img {
+    animation: floatLeftRight 20s ease-in-out infinite;
+}
+
+
+#hero img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(4%, -47.5%);
+    z-index: 0;
+    height: 40rem;
+    width: auto;
+    overflow: hidden;
+}
+
+#hero .container {
+    max-width: 27rem;
+}
 
 #hero .hero-container {
     display: flex;
@@ -22,7 +52,7 @@ video {
     justify-content: end;
     gap: var(--xl);
 
-    height: 95svh;
+    height: 40rem;
     padding: var(--xl) var(--lg);
 }
 
@@ -41,36 +71,6 @@ video {
     flex-direction: column;
     gap: var(--md);
 }
-
-/* #hero .gradient {
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.655) 60%);
-} */
-
-/* #hero picture img {
-    position: absolute;
-    top: 0;
-    width: auto;
-    height: 80vh;
-    object-fit: cover;
-    object-position: center 65%;
-    z-index: -1;
-} */
-
-#hero {
-    background-image: url('../images/home-mobile.webp');
-    background-position: center 100%; /* Adjust this to position the black part right */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-}
-
-
 
 #hero .text-container {
     display: grid;
@@ -421,22 +421,28 @@ video {
 }
 
 @media (width >=768px) {
+
     /* hero */
     #hero {
+        background-image: url('../images/home.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
         padding-left: var(--xl);
         padding-right: var(--xl);
+        height: 42rem;
     }
 
     #hero .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: end;
-
+        width: 40rem;
     }
 
     #hero .hero-container {
+        height: 42rem;
         padding-left: 0;
         padding-right: 0;
+        padding: var(--xxl) 0;
     }
 
     #hero .subtitle {
@@ -483,17 +489,29 @@ video {
         padding-right: var(--xl);
     }
 
-    #hook .glass-container {
+    /* #hook .glass-container {
         padding: var(--xl);
-    }
+    } */
 
-    #hook .video-container {
+    /* #hook .video-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    } */
+
+    /* #hook video {
+        grid-column: span 2;
+    } */
+    #hook .mobile {
+        display: none;
     }
 
-    #hook video {
-        grid-column: span 2;
+    #hook .video-subheading {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #hook .description {
+        grid-column: 2;
     }
 
     /* benefits */

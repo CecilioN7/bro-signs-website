@@ -76,6 +76,47 @@ body {
     color: var(--cloudGrey);
 }
 
+/* navigation */
+header .bottom-nav-container {
+    display: none;
+}
+
+header .mobile-nav {
+    display: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header #primary-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--desertStorm);
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--md);
+}
+
+header li{
+    list-style-type: none;
+    padding: var(--md);
+}
+
+header a {
+    text-decoration: none;
+    padding: var(--md);
+    color: var(--midnightAsh);
+    font-size: var(--font-size__100);
+    font-weight: 500;
+}
+
 /* icon */
 .icon {
     height: var(--xxl);
@@ -491,6 +532,7 @@ footer ul {
         font-weight: 700;
         text-decoration: none;
         color: var(--midnightAsh);
+        padding: 0;
     }
 
     header a {

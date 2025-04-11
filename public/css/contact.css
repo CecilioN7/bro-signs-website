@@ -213,9 +213,16 @@ button:focus {
     }
 
     .form-section .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         padding: var(--xl);
         border-radius: var(--lg);
     }
+
+    .form-section .form-items {
+        grid-column: 2;
+    }
+
 
     /* #contact {
         padding: var(--xxxl) var(--xl);
