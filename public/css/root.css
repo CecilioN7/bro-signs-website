@@ -92,10 +92,34 @@ header {
 }
 
 header #primary-navigation {
+    background-color: var(--desertStorm);
+    padding: var(--sm) var(--xl)
+}
+
+header .nav-items-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: var(--desertStorm);
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    max-width: 75rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header .button-1 {
+    width: 10rem;
+}
+
+header .logo {
+    display: flex;
+    width: 10rem;
+    padding: 0;
+}
+
+header .logo img {
+    max-height: 2rem;
+    width: auto;
 }
 
 header ul {
@@ -422,6 +446,11 @@ footer ul {
         display: none;
     }
 
+    header .logo {
+        display: none;
+    }
+
+
     /* p {
         font-weight: 500;
     }
@@ -494,6 +523,10 @@ footer ul {
         background-color: var(--desertStorm);
         height: 100%;
         transition: right 300ms ease-out;
+    }
+
+    header .nav-items-container {
+        padding-top: var(--xxxl);
     }
 
     header #primary-navigation.show {
