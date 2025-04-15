@@ -10,7 +10,7 @@ video {
 
 /* hero */
 #hero {
-    position:relative;
+    position: relative;
     overflow: hidden;
     background-image: url('../images/home-mobile.jpg');
     background-position: center;
@@ -21,9 +21,17 @@ video {
 }
 
 @keyframes floatLeftRight {
-    0%   { transform: translate(4%, -47.5%); }
-    50%  { transform: translate(8%, -47.5%); }
-    100% { transform: translate(4%, -47.5%); }
+    0% {
+        transform: translate(11%, -80%);
+    }
+
+    50% {
+        transform: translate(8%, -80%);
+    }
+
+    100% {
+        transform: translate(11%, -80%);
+    }
 }
 
 #hero img {
@@ -35,9 +43,9 @@ video {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(4%, -47.5%);
+    /* transform: translate(11%, -80%); */
     z-index: 0;
-    height: 40rem;
+    height: 18rem;
     width: auto;
     overflow: hidden;
 }
@@ -90,8 +98,119 @@ video {
     font-weight: 700;
 }
 
-/* services */
+/* ===============================
+   SERVICES SECTION
+================================= */
+
 #services {
+  padding: var(--xxxl) 0;
+  text-align: center;
+}
+
+#services .container {
+  padding: 0 var(--lg);
+  display: grid;
+  gap: var(--xl);
+}
+
+/* -------------------------------
+   Services Card Container
+--------------------------------- */
+#services .services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 0 var(--lg);
+}
+
+/* -------------------------------
+   Generic Card Styles
+--------------------------------- */
+.card {
+  scroll-snap-align: center;
+}
+
+/* -------------------------------
+   Shared Card Styles (Services)
+--------------------------------- */
+#services .service-1,
+#services .service-2,
+#services .service-3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+
+  padding: var(--lg);
+  border-radius: var(--md);
+  width: 16rem;
+  height: 28rem;
+}
+
+/* -------------------------------
+   Individual Card Backgrounds & Overrides
+--------------------------------- */
+#services .service-1 {
+  background-image: url('/images/service1.png');
+  background-color: #11100c;
+  color: var(--desertStorm);
+}
+
+#services .service-2 {
+  background-image: url('/images/service2.png');
+  color: var(--desertStorm);
+}
+
+#services .service-3 {
+  background-image: url('/images/service3.png');
+}
+
+/* -------------------------------
+   Card Text Alignment
+--------------------------------- */
+#services .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* -------------------------------
+   Typography
+--------------------------------- */
+#services h2 {
+  font-size: var(--font-size__200);
+}
+
+#services p {
+  text-align: left;
+  font-size: var(--font-size__100);
+}
+
+/* -------------------------------
+   CTA Button & Icon
+--------------------------------- */
+#services a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--xl);
+  width: var(--xl);
+  background-color: var(--ironOre);
+  border-radius: 100rem;
+}
+
+#services svg {
+  stroke: var(--desertStorm);
+}
+
+/* services */
+/* #services {
     padding: var(--xxxl) var(--lg);
     text-align: center;
 }
@@ -125,6 +244,7 @@ video {
     display: flex;
     flex-direction: row;
     justify-content: left;
+    align-items: center;
     gap: var(--sm);
 }
 
@@ -144,6 +264,16 @@ video {
     fill: var(--midnightAsh)
 }
 
+#services .projects-button{
+    background-color: var(--midnightAsh);
+    padding: var(--md);
+    border-radius: var(--xl);
+    color: var(--desertStorm);
+    text-decoration: none;
+    font-size: var(--font-size__100);
+    font-weight: 700;
+}
+
 #services h1 {
     color: var(--midnightAsh);
     font-size: var(--font-size__400);
@@ -161,7 +291,7 @@ video {
     font-size: var(--font-size__100);
     color: var(--midnightAsh);
     font-weight: 500;
-}
+} */
 
 /* hook */
 #hook {
@@ -434,6 +564,24 @@ video {
         height: 42rem;
     }
 
+    @keyframes floatLeftRight {
+        0% {
+            transform: translate(4%, -47.5%);
+        }
+
+        50% {
+            transform: translate(8%, -47.5%);
+        }
+
+        100% {
+            transform: translate(4%, -47.5%);
+        }
+    }
+
+    #hero img {
+        height: 40rem;
+    }
+
     #hero .container {
         width: 40rem;
     }
@@ -459,7 +607,7 @@ video {
     }
 
     /* services */
-    #services {
+    /* #services {
         padding-left: var(--xl);
         padding-right: var(--xl);
     }
@@ -481,7 +629,7 @@ video {
 
     #services h1 {
         white-space: normal;
-    }
+    } */
 
     /* hook */
     #hook {
