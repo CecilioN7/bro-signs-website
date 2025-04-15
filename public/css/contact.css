@@ -1,9 +1,4 @@
 /* contact information */
-p,
-a {
-    font-size: var(--font-size__100);
-    font-weight: 500;
-}
 
 #contact {
     display: flex;
@@ -63,6 +58,12 @@ a {
     color: var(--midnightAsh);
     font-size: var(--font-size__600);
     font-weight: 700;
+}
+
+p,
+a {
+    font-size: var(--font-size__100);
+    font-weight: 500;
 }
 
 #contact .info {
@@ -194,7 +195,7 @@ button:focus {
 @media (width >=768px) {
     p,
     a {
-        font-size: var(--font-size__200);
+        font-size: var(--font-size__100);
     }
     #contact {
         padding: var(--xl) var(--xl);
@@ -219,6 +220,12 @@ button:focus {
         border-radius: var(--md);
     }
 
+    #contact h1 {
+        color: var(--midnightAsh);
+        font-size: var(--font-size__700);
+        font-weight: 700;
+    }
+
     /* contact-form */
     .form-section {
         padding: 0% var(--xl);
@@ -234,6 +241,12 @@ button:focus {
 
     .form-section .form-items {
         grid-column: 2;
+    }
+
+    .form-section  h1 {
+        font-size: var(--font-size__500);
+        font-weight: 700;
+        color: var(--midnightAsh);
     }
 
 

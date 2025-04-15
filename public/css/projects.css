@@ -46,6 +46,19 @@ img {
         padding-left: 0%;
         padding-right: 0%;
     }
+
+    #projects-title h1 {
+        font-size: var(--font-size__700);
+        font-weight: 700;
+        color: var(--midnightAsh);
+    }
+
+    #projects-title p {
+        color: var(--midnightAsh);
+        font-size: var(--font-size__100);
+        font-weight: 500;
+    }
+    
     /* photos grid */
     #photos-grid {
         padding: 0 var(--xl);

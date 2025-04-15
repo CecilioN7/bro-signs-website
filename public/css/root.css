@@ -162,11 +162,9 @@ button {
     text-decoration: none;
 }
 
-.button-1 h2 {
-    margin-bottom: 0;
-    font-size: var(--font-size__300);
-    font-weight: 600;
-    color: inherit;
+.button-1,
+.button-2 {
+    font-weight: 700;
 }
 
 .button-1:hover {
@@ -572,12 +570,12 @@ footer ul {
       
 
     /* buttons */
-    #hero .button-1 {
+    .button-1 {
         font-size: var(--font-size__100);
         font-weight: 700;
     }
 
-    #hero .button-2 {
+    .button-2 {
         font-size: var(--font-size__100);
         font-weight: 700;
     }

@@ -18,6 +18,16 @@ button.addEventListener('click', () => {
     }
 })
 
+const video = document.getElementById('video-mobile')
+video.addEventListener("click", () => {
+    video.setAttribute('controls', true)
+})
+
+// prevents double click
+document.addEventListener("dblclick", (e) => {
+    e.preventDefault()
+}, { passive: false})
+
 document.querySelectorAll('.faq-container').forEach(item => {
     item.addEventListener('click', function () {
         const isActive = this.classList.contains('active');
@@ -26,7 +36,7 @@ document.querySelectorAll('.faq-container').forEach(item => {
             activeItem.classList.remove('active');
             activeItem.querySelector('.answer').style.maxHeight = null;
         });
-        
+
         if (!isActive) {
             this.classList.add('active');
             const answer = this.querySelector('.answer');
@@ -165,7 +175,3 @@ function onYouTubeIframeAPIReady() {
         }
     });
 }
-
-
-
-

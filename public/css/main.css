@@ -22,7 +22,7 @@ video {
 
 @keyframes floatLeftRight {
     0% {
-        transform: translate(11%, -80%);
+        transform: translate(12%, -80%);
     }
 
     50% {
@@ -30,12 +30,12 @@ video {
     }
 
     100% {
-        transform: translate(11%, -80%);
+        transform: translate(12%, -80%);
     }
 }
 
 #hero img {
-    animation: floatLeftRight 20s ease-in-out infinite;
+    animation: floatLeftRight 10s ease-in-out infinite;
 }
 
 
@@ -64,11 +64,11 @@ video {
     padding: var(--xl) var(--lg);
 }
 
-#hero .channel-letters {
+/* #hero .channel-letters {
     text-shadow:
         0px 0px 15px rgba(255, 255, 255, 0.6),
         0px 0px 40px rgba(250, 250, 250, 0.299);
-}
+} */
 
 #hero .subtitle {
     display: none;
@@ -92,206 +92,109 @@ video {
     font-weight: 700;
 }
 
-#hero h2.mobile {
-    font-size: var(--font-size__400);
+#hero h2 {
+    font-size: var(--font-size__300);
     color: var(--desertStorm);
-    font-weight: 700;
-}
-
-/* ===============================
-   SERVICES SECTION
-================================= */
-
-#services {
-  padding: var(--xxxl) 0;
-  text-align: center;
-}
-
-#services .container {
-  padding: 0 var(--lg);
-  display: grid;
-  gap: var(--xl);
-}
-
-/* -------------------------------
-   Services Card Container
---------------------------------- */
-#services .services-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 1rem;
-  padding: 0 var(--lg);
-}
-
-/* -------------------------------
-   Generic Card Styles
---------------------------------- */
-.card {
-  scroll-snap-align: center;
-}
-
-/* -------------------------------
-   Shared Card Styles (Services)
---------------------------------- */
-#services .service-1,
-#services .service-2,
-#services .service-3 {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: end;
-
-  padding: var(--lg);
-  border-radius: var(--md);
-  width: 16rem;
-  height: 28rem;
-}
-
-/* -------------------------------
-   Individual Card Backgrounds & Overrides
---------------------------------- */
-#services .service-1 {
-  background-image: url('/images/service1.png');
-  background-color: #11100c;
-  color: var(--desertStorm);
-}
-
-#services .service-2 {
-  background-image: url('/images/service2.png');
-  color: var(--desertStorm);
-}
-
-#services .service-3 {
-  background-image: url('/images/service3.png');
-}
-
-/* -------------------------------
-   Card Text Alignment
---------------------------------- */
-#services .text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-/* -------------------------------
-   Typography
---------------------------------- */
-#services h2 {
-  font-size: var(--font-size__200);
-}
-
-#services p {
-  text-align: left;
-  font-size: var(--font-size__100);
-}
-
-/* -------------------------------
-   CTA Button & Icon
---------------------------------- */
-#services a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--xl);
-  width: var(--xl);
-  background-color: var(--ironOre);
-  border-radius: 100rem;
-}
-
-#services svg {
-  stroke: var(--desertStorm);
+    font-weight: 500;
 }
 
 /* services */
-/* #services {
-    padding: var(--xxxl) var(--lg);
+#services {
+    padding: var(--xxxl) 0;
     text-align: center;
-}
-
-#services .container {
     display: grid;
     gap: var(--xl);
 }
 
-#services .services-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--xl);
+#services .container {
+    padding: 0 var(--lg);
+}
 
-    background-color: var(--foggyMist);
-    border-radius: var(--lg);
-    padding: var(--xl) var(--lg);
+#services .services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: var(--lg);
+    padding: 0 var(--lg);
 }
 
 #services .card {
-    max-width: 20rem;
+    scroll-snap-align: center;
+}
+
+#services .service-1,
+#services .service-2,
+#services .service-3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    gap: var(--sm);
+    justify-content: space-between;
+    align-items: end;
+    padding: var(--lg);
+    border-radius: var(--md);
+    width: 16rem;
+    height: 28rem;
 }
 
-#services .icon-sign {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    gap: var(--sm);
-}
-
-#services picture {
-    display: flex;
-    height: var(--lg);
-    width: var(--lg);
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--xs);
-    border: 1.75px solid var(--midnightAsh);
-}
-
-#services svg {
-    height: var(--md);
-    width: var(--md);
-    fill: var(--midnightAsh)
-}
-
-#services .projects-button{
-    background-color: var(--midnightAsh);
-    padding: var(--md);
-    border-radius: var(--xl);
+#services .service-1 {
+    background-image: url('/images/service1.png');
+    background-color: #11100c;
     color: var(--desertStorm);
-    text-decoration: none;
-    font-size: var(--font-size__100);
-    font-weight: 700;
+}
+
+#services .service-2 {
+    background-image: url('/images/service2.png');
+    color: var(--desertStorm);
+}
+
+#services .service-3 {
+    background-image: url('/images/service3.png');
+}
+
+#services .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #services h1 {
-    color: var(--midnightAsh);
     font-size: var(--font-size__400);
     font-weight: 700;
-    white-space: pre-line;
 }
 
 #services h2 {
-    color: var(--midnightAsh);
     font-size: var(--font-size__300);
     font-weight: 700;
 }
 
 #services p {
+    text-align: left;
     font-size: var(--font-size__100);
-    color: var(--midnightAsh);
     font-weight: 500;
-} */
+}
+
+#services a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--xl);
+    width: var(--xl);
+    background-color: var(--ironOre);
+    border-radius: 100rem;
+}
+
+#services svg {
+    stroke: var(--desertStorm);
+}
+
+#hook {
+    position: relative;
+    z-index: 0;
+    /* Ensure it stacks above the logo */
+}
 
 /* hook */
 #hook {
@@ -304,30 +207,9 @@ video {
     gap: var(--md);
 }
 
-/* .glass-container {
-    border-radius: var(--lg);
-    background-color: rgba(255, 255, 255, 0.062);
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(20px);
-
-    border-top: 2px solid rgba(255, 255, 255, 0.321);
-    border-left: 2px solid rgba(255, 255, 255, 0.236);
-    border-bottom: 2px solid rgba(238, 146, 254, 0.323);
-    border-right: 2px solid rgba(238, 146, 254, 0.323);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.146);
-
-    padding: var(--xl) var(--lg);
-    width: 100%;
-    height: auto;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    gap: var(--md);
-} */
-
 #hook .video-container {
     display: grid;
-    gap: var(--md)
+    gap: var(--lg)
 }
 
 #hook .video-subheading {
@@ -373,6 +255,7 @@ video {
 #benefits .service-card-reversed {
     display: grid;
     gap: var(--md);
+    align-items: center;
 }
 
 #benefits .text {
@@ -499,15 +382,15 @@ video {
 }
 
 .location-1 {
-    background-image: url(../images/location1.webp);
+    background-image: url(../images/location1.png);
 }
 
 .location-2 {
-    background-image: url(../images/location2.webp);
+    background-image: url(../images/location2.png);
 }
 
 .location-3 {
-    background-image: url(../images/location3.webp);
+    background-image: url(../images/location3.png);
 }
 
 #locations .location-card {
@@ -537,6 +420,10 @@ video {
     font-size: var(--font-size__200);
     font-weight: 700;
     color: var(--desertStorm);
+}
+
+#locations .location-2 h2 {
+    color: var(--midnightAsh);
 }
 
 #locations .desktop {
@@ -578,68 +465,67 @@ video {
         }
     }
 
+    #hero .container {
+        max-width: 40rem;
+    }
+
     #hero img {
         height: 40rem;
-    }
-
-    #hero .container {
-        width: 40rem;
-    }
-
-    #hero .hero-container {
-        height: 42rem;
-        padding-left: 0;
-        padding-right: 0;
-        padding: var(--xxl) 0;
-    }
-
-    #hero .subtitle {
-        display: block;
-        color: white;
     }
 
     #hero .buttons {
         flex-direction: row;
     }
 
-    #hero .gradient {
-        background: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.602) 70%);
+    #hero h1 {
+        font-size: var(--font-size__700);
+    }
+
+    #hero h2 {
+        font-size: var(--font-size__400);
     }
 
     /* services */
-    /* #services {
-        padding-left: var(--xl);
-        padding-right: var(--xl);
-    }
-
     #services .services-container {
-        flex-direction: row;
-        padding: var(--xl);
+        position: relative;
+        max-width: 75rem;
+        margin: 0 auto;
+        width: 100%;
+
+        overflow: unset;
+        scroll-snap-type: none;
     }
 
-    #services .icon-box {
-        height: var(--xxxl);
-        width: var(--xxxl);
+    #services .card {
+        flex: unset;
+        scroll-snap-type: none;
     }
 
-    #services img {
-        height: var(--xxl);
-        width: var(--xxl);
+    #services .service-1,
+    #services .service-2,
+    #services .service-3 {
+        aspect-ratio: 9 / 16;
+        width: 100%;
+        height: auto;
     }
 
     #services h1 {
-        white-space: normal;
-    } */
+        font-size: var(--font-size__500);
+    }
+
+    #services h2 {
+        font-size: var(--font-size__400);
+    }
+
+    #services p {
+        font-size: var(--font-size__100);
+    }
 
     /* hook */
     #hook {
         padding-left: var(--xl);
         padding-right: var(--xl);
     }
-
-    /* #hook .glass-container {
-        padding: var(--xl);
-    } */
 
     /* #hook .video-container {
         display: grid;
@@ -660,6 +546,14 @@ video {
 
     #hook .description {
         grid-column: 2;
+    }
+
+    #hook h1 {
+        font-size: var(--font-size__500);
+    }
+
+    #hook p {
+        font-size: var(--font-size__100);
     }
 
     /* benefits */
@@ -688,6 +582,15 @@ video {
         /* Reverse order for text */
     }
 
+    #benefits h2 {
+        font-size: var(--font-size__400);
+    }
+
+    #benefits p {
+        font-size: var(--font-size__100);
+    }
+
+
     /* reviews */
     #reviews {
         padding: 0 var(--xl);
@@ -696,6 +599,10 @@ video {
     #reviews .container {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    #reviews h1 {
+        font-size: var(--font-size__500);
     }
 
     /* locations */
@@ -727,11 +634,15 @@ video {
 
     #locations .location-card {
         height: 30rem;
-        padding: var(--xl);
+        padding: var(--lg);
+    }
+
+    #locations h1 {
+        font-size: var(--font-size__500);
     }
 
     #locations h2 {
-        font-size: var(--font-size__400);
+        font-size: var(--font-size__300);
     }
 
 }
