@@ -162,7 +162,7 @@ app.post('/', upload.array('upload_images'), async (req, res) => {
     await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: 'navarro.cecilio16@gmail.com',
-      reply_to: req.body.email,
+      replyTo: req.body.email,
       subject: subject,
       html: html
     });
