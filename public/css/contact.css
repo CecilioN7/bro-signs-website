@@ -1,5 +1,4 @@
 /* contact information */
-
 #contact {
     display: flex;
     flex-direction: column;
@@ -199,6 +198,7 @@ button:focus {
     }
     #contact {
         padding: var(--xl) var(--xl);
+        padding-top: var(--xxxl);
         padding-bottom: var(--xxxl);
     }
     #contact .contact-information {

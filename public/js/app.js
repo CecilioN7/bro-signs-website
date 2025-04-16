@@ -1,3 +1,14 @@
+// prevents double click
+document.addEventListener("dblclick", (e) => {
+    e.preventDefault()
+}, { passive: false})
+
+document.querySelectorAll('video').forEach(video => {
+    video.addEventListener('click', () => {
+        video.setAttribute('controls', true)
+    })
+})
+
 const button = document.querySelector('.button-one');
 const navbar = document.getElementById('primary-navigation')
 const overlay = document.getElementById('overlay')
@@ -17,16 +28,6 @@ button.addEventListener('click', () => {
         navbar.classList.remove('show')
     }
 })
-
-const video = document.getElementById('video-mobile')
-video.addEventListener("click", () => {
-    video.setAttribute('controls', true)
-})
-
-// prevents double click
-document.addEventListener("dblclick", (e) => {
-    e.preventDefault()
-}, { passive: false})
 
 document.querySelectorAll('.faq-container').forEach(item => {
     item.addEventListener('click', function () {

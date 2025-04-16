@@ -125,7 +125,6 @@ header .logo img {
 header ul {
     display: flex;
     flex-direction: row;
-    gap: var(--md);
 }
 
 header li{
@@ -139,6 +138,10 @@ header a {
     color: var(--midnightAsh);
     font-size: var(--font-size__100);
     font-weight: 500;
+}
+
+header .nav-container a:hover {
+    color: var(--oceanBreeze)
 }
 
 /* icon */
@@ -192,7 +195,7 @@ button {
 }
 
 .button-1:hover {
-    background-color: #4e8687;
+    background-color: hsl(182, 28%, 52%);
     cursor: pointer;
 }
 

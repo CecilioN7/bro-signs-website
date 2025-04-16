@@ -186,8 +186,56 @@ video {
     border-radius: 100rem;
 }
 
+#services a:hover {
+    background-color: hsl(190, 2%, 60%);;
+}
+
 #services svg {
     stroke: var(--desertStorm);
+}
+
+#services svg:hover {
+    stroke: white;
+}
+
+#brands {
+    padding: var(--xxxl) var(--lg);
+    padding-top: 0%;
+}
+
+#brands .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--lg);
+}
+
+#brands .logos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    grid-template-rows: repeat(2, auto);
+    /* 2 rows */
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+#brands svg {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+#brands img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+#brands h1 {
+    font-size: var(--font-size__400);
+    font-weight: 700;
+    color: var(--midnightAsh);
 }
 
 #hook {
@@ -486,7 +534,13 @@ video {
     }
 
     /* services */
+    #services {
+        padding: var(--xxxl) var(--xl);
+        ;
+    }
+
     #services .services-container {
+        padding: 0;
         position: relative;
         max-width: 75rem;
         margin: 0 auto;
@@ -519,6 +573,20 @@ video {
 
     #services p {
         font-size: var(--font-size__100);
+    }
+
+    /* brands */
+    #brands {
+        padding-left: var(--xl);
+        padding-right: var(--xl);
+    }
+
+    #brands .logos-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #brands h1 {
+        font-size: var(--font-size__500);
     }
 
     /* hook */
@@ -582,6 +650,10 @@ video {
         /* Reverse order for text */
     }
 
+    #benefits img {
+        height: 25rem;
+    }    
+
     #benefits h2 {
         font-size: var(--font-size__400);
     }
@@ -633,7 +705,7 @@ video {
     }
 
     #locations .location-card {
-        height: 30rem;
+        height: 25rem;
         padding: var(--lg);
     }
 
